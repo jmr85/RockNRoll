@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".abmUsuario"
+    android:background="#FFC107">
+
+  <TextView
+      android:id="@+id/fecha"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textAppearance="?android:attr/textAppearanceMedium"
+      android:textColor="#e65100" />
+
+
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentTop="true"
+      android:layout_centerHorizontal="true"
+      android:layout_gravity="center"
+      android:layout_marginTop="80dp"
+      android:text="MODIFICAR USUARIO"
+      android:textColor="#e65100"
+      android:textSize="30dp"
+      android:textStyle="bold" />
+
+  <EditText
+      android:id="@+id/editTextPersonName"
+      android:layout_width="333dp"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentEnd="true"
+      android:layout_marginStart="27dp"
+      android:layout_centerHorizontal="true"
+      android:layout_marginEnd="36dp"
+      android:layout_marginBottom="229dp"
+      android:background="#fbe9e7"
+      android:ems="10"
+      android:hint="Nombre y Apellido"
+      android:textColor="#616161"
+      android:inputType="textPersonName" />
+
+  <EditText
+      android:id="@+id/editTextEmail"
+      android:layout_width="333dp"
+      android:layout_height="wrap_content"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentBottom="true"
+      android:layout_centerHorizontal="true"
+      android:layout_marginStart="27dp"
+      android:layout_marginEnd="36dp"
+      android:layout_marginBottom="169dp"
+      android:background="#fbe9e7"
+      android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ._-@1234567890"
+      android:ems="10"
+      android:hint="Email"
+      android:inputType="textEmailAddress"
+      android:textColor="#616161"
+      android:maxLength="50" />
+
+  <EditText
+      android:id="@+id/editTextPassword"
+      android:layout_width="333dp"
+      android:layout_height="wrap_content"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentBottom="true"
+      android:layout_centerHorizontal="true"
+      android:layout_marginStart="27dp"
+      android:layout_marginEnd="40dp"
+      android:layout_marginBottom="109dp"
+      android:background="#fbe9e7"
+      android:digits="abcdefghijklmnopqrstuvwxyzñABCDEFGHIJKLMNOPQRSTUVWXYZÑ1234567890"
+      android:ems="10"
+      android:hint="Contraseña de 4 a 10 caracteres"
+      android:inputType="textPassword"
+      android:maxLength="8"
+      android:textColor="#616161"
+      app:endIconMode="password_toggle" />
+
+  <Button
+      android:id="@+id/buttonEliminarUsuario"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_marginEnd="0dp"
+      android:layout_marginBottom="40dp"
+      android:backgroundTint="#1EBDBDBD"
+      android:text="Eliminar usuario"
+      android:textColor="#FFFFFF" />
+  <Button
+      android:id="@+id/buttonGuardarCambios"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_marginBottom="0dp"
+      android:background="#616161"
+      android:backgroundTint="#E65100"
+      android:text="Guardar cambios"
+      android:textColor="#FFFFFF"/>
+
+
+
+</RelativeLayout>
+
